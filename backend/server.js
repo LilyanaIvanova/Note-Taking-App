@@ -29,6 +29,17 @@ app.get("/api/notes", async (req, res) => {
   }
 });
 
+app.put("/api/notes/:id", async (req, res) => {
+  const _id = new mongoose.Types.ObjectId(req.params.id);
+
+  try {
+    const updatedNote = await Note.findOneAndUpdate({ _id }, req.body);
+    res.status(200).json(updatedNote);
+  } catch (err) {
+    res.status(400).json({ message: err.message });
+  }
+});
+
 app.post("/api/notes", async (req, res) => {
   const note = new Note({
     title: req.body.title,

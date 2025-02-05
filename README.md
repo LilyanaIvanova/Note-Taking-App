@@ -12,7 +12,7 @@ To run the program locally, you will need to:
 
 1. Navigate to the folder with name 'backend'.
 
-   `$ cd Note-Keeping-App/Keeper-App/backend/`
+   `$ cd /Keeper-App/backend/`
 
 2. `npm run dev` to run the backend application.
 
@@ -20,6 +20,6 @@ To run the program locally, you will need to:
 
 1. Navigate to the folder with name 'Keeper-App'
 
-   `$ cd Note-Keeping-App/Keeper-App/`
+   `$ cd /Keeper-App/`
 
 2. `npm run start` to run the frontend application.
